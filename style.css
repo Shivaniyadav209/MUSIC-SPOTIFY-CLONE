@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Domine&family=Nunito&display=swap');
+
+body{
+    /* background-color: antiquewhite; */
+    background: linear-gradient(to right,#ff1088,#5330f3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Nunito', sans-serif;
+
+}
+nav ul{
+     display: flex;                         /*saare item horizontally aa jayege */
+     align-items: center;          
+     list-style-type: none;
+     height: 89px;
+     background-color: black;
+     color: white;
+     font-size: 1.3rem;
+     font-weight: bold;
+}
+nav ul li{
+    padding:0 30px;
+}
+.brand img{
+    width: 112px;      /*vo logo h jo chota ho jayega*/
+    /* padding:0 8px if agar image or spotify k beech m gap na ho tb/ */
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+.container{
+    min-height: 77vh;
+    background-color: black;
+    color: white;
+    font-family: 'Prata', serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 2150px;
+}
+.bottom{
+    position: sticky;
+    height: 100px;   /*vo jo pati h  black vo hum moti chahte h thodi thats why*/
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;        /*issse vo line jo h vo center m aa jayegi top aur bottom se*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.icons{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.icons i{
+    cursor: pointer;   /*so that agar koi point kre vha to play ho jaye forward kre to vo and so on*/
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+
+}
+.songItemContainer{
+    margin-top: 94px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    /* width: 80%; */
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem img{
+ width: 50px;
+ margin: 0 23px;
+ border-radius: 34px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Prata', serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
